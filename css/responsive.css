@@ -1,0 +1,51 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header .itemLogo {
+    width: 130px;
+  }
+  .header .itemOther .user {
+    display: block;
+  }
+  .header .itemOther .iconmenu {
+    display: block;
+    margin-left: 30px;
+  }
+  .header .itemOther .mainbtn {
+    display: none;
+  }
+  .header .itemOther svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header .cart {
+    margin-left: 15px;
+  }
+  .header .user {
+    margin-left: 15px;
+  }
+  .header .itemMenu {
+    display: none;
+  }
+
+  .header .itemOther {
+    margin-left: auto;
+  }
+  .fixed-top {
+    top: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .topheader {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 444px) {
+}
