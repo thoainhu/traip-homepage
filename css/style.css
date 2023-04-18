@@ -248,9 +248,7 @@ img {
 .mainbtn .btn:hover i {
   transform: rotate(-45deg);
 }
-
 .popup-search {
-  position: relative;
   width: 100%;
   height: 100%;
   top: 0;
@@ -259,58 +257,62 @@ img {
   visibility: hidden;
   transition: 0.5s;
   position: absolute;
+  z-index: 10000;
+  position: fixed;
 }
 .popup-search .overlay {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.757);
   position: absolute;
   top: 0;
   left: 0;
 }
 .popup-search .form {
   position: absolute;
-  background-color: #29a598;
-  width: 40%;
-  top: 70px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 10px; */
+  width: 20%;
 }
-
 .popup-search.active {
   opacity: 1;
   visibility: visible;
 }
-.popup-search .form i {
+.popup-search .overlay i {
   position: absolute;
   color: #ffff;
-  top: 25px;
-  left: 95%;
+  top: 28px;
+  left: 97%;
+  font-size: 30px;
+  cursor: pointer;
 }
-.popup-search .form input {
+
+.popup-search .form .logo-white {
+  width: 35%;
+  margin: 20px auto;
+}
+.popup-search .search-bar {
+  display: flex;
+  border-radius: 2px 2px;
+}
+.popup-search .form .search-bar input {
   display: block;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  width: 100%;
-  height: 30px;
+  width: 60%;
+  height: 100%;
   padding: 15px;
   font-family: "Oswald", sans-serif;
 }
-.popup-search .form .mainbtn {
-  text-align: right;
+.popup-search .form .search-bar .mainbtn {
+  width: 40%;
 }
-/* .popup .form .butn button {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-family: "Work Sans", sans-serif;
-  font-size: 12px;
-  margin-top: 20px;
-} */
+.popup-search .form .mainbtn button {
+}
+
 @keyframes hoveron {
   from {
     transform: translateX(-50%) translateY(0%);

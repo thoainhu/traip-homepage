@@ -418,13 +418,18 @@
       </div>
     </div>
     <div class="popup-search">
-      <div class="overlay"></div>
-      <div class="form">
+      <div class="overlay">
         <i class="fa-solid fa-x"></i>
-        <img src="img/logo-white.png" alt="" />
-        <input type="text" placeholder="Search" />
-        <div class="mainbtn">
-          <button class="btn">Search Now</button>
+      </div>
+      <div class="form">
+        <div class="logo-white">
+          <img src="img/logo-white.png" alt="" />
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search*" required />
+          <div class="mainbtn">
+            <button class="btn">Search Now</button>
+          </div>
         </div>
       </div>
     </div>
@@ -891,76 +896,98 @@
       </div>
     </div>
     <div class="favorite">
-      <div class="all d-flex">
-        <div class="video">
+      <div class="bg-map">
+        <img src="img/video/map-2.png" alt="" />
+      </div>
+      <div class="all">
+        <div class="video order-2">
+          <!-- <img src="img/video/video-bg.jpg" alt="" /> -->
           <button class="play"><i class="fa-solid fa-play"></i></button>
         </div>
-        <div class="content">
-          <div class="main-title">
-            <h4 class="title-session">Among The All</h4>
-            <h1 class="title-content">Choose Your Favorite Tour</h1>
-          </div>
-          <div class="text d-flex">
-            <div class="icon">
-              <i class="fa-regular fa-images"></i>
+        <div class="content order-1">
+          <div class="content-item">
+            <div class="main-title">
+              <h4 class="title-session">Among The All</h4>
+              <h1 class="title-content">Choose Your Favorite Tour</h1>
             </div>
-            <div class="icon-content">
-              <h3>We Suggest You The Best Tour Collection</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                erat, sed diam voluptua.
-              </p>
+            <div class="text d-flex">
+              <div class="icon">
+                <i class="fa-regular fa-images"></i>
+              </div>
+              <div class="icon-content">
+                <h3>We Suggest You The Best Tour Collection</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                  erat, sed diam voluptua.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="mainbtn">
-            <button class="btn">Book A Tour<i class="fa-solid fa-arrow-right-long"></i></button>
+            <div class="mainbtn">
+              <button class="btn">Book A Tour<i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="list">
-        <div class="container d-flex" style="max-width: 1400px">
-          <a href="" class="choosing">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/hiking.png" alt="" />
-              <img class="hover" src="img/video/hiking-hover.png" alt="" />
+      <div class="container">
+        <div class="list">
+          <div class="container d-flex" style="max-width: 1400px">
+            <div class="row">
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/hiking.png" alt="" />
+                    <img class="hover" src="img/video/hiking-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#38a4f1" style="color: #38a4f1">Adventure</h3>
+                </div>
+              </a>
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/beach.png" alt="" />
+                    <img class="hover" src="img/video/beach-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#f85ba6" style="color: #f85ba6">Sea Beach</h3>
+                </div>
+              </a>
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/mountain.png" alt="" />
+                    <img class="hover" src="img/video/mountain-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#10e9dd" style="color: #10e9dd">Mountains</h3>
+                </div>
+              </a>
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/bagpack.png" alt="" />
+                    <img class="hover" src="img/video/bagpack-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#ffa877" style="color: #ffa877">Couple Tour</h3>
+                </div>
+              </a>
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/fire.png" alt="" />
+                    <img class="hover" src="img/video/fire-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#4d66e6" style="color: #4d66e6">Night Fall</h3>
+                </div>
+              </a>
+              <a href="" class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 choosing">
+                <div class="choosing-title">
+                  <div class="choosing-img">
+                    <img class="none-hover" src="img/video/popular.png" alt="" />
+                    <img class="hover" src="img/video/popular-hover.png" alt="" />
+                  </div>
+                  <h3 datacolor="#60cce4" style="color: #60cce4">Popular</h3>
+                </div>
+              </a>
             </div>
-            <h3 datacolor="#38a4f1" style="color: #38a4f1">Adventure</h3>
-          </a>
-          <a href="" class="choosing" id="#f85ba6">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/beach.png" alt="" />
-              <img class="hover" src="img/video/beach-hover.png" alt="" />
-            </div>
-            <h3 datacolor="#f85ba6" style="color: #f85ba6">Sea Beach</h3>
-          </a>
-          <a href="" class="choosing">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/mountain.png" alt="" />
-              <img class="hover" src="img/video/mountain-hover.png" alt="" />
-            </div>
-            <h3 datacolor="#10e9dd" style="color: #10e9dd">Mountains</h3>
-          </a>
-          <a href="" class="choosing">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/bagpack.png" alt="" />
-              <img class="hover" src="img/video/bagpack-hover.png" alt="" />
-            </div>
-            <h3 datacolor="#ffa877" style="color: #ffa877">Couple Tour</h3>
-          </a>
-          <a href="" class="choosing">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/fire.png" alt="" />
-              <img class="hover" src="img/video/fire-hover.png" alt="" />
-            </div>
-            <h3 datacolor="#4d66e6" style="color: #4d66e6">Night Fall</h3>
-          </a>
-          <a href="" class="choosing">
-            <div class="choosing-img">
-              <img class="none-hover" src="img/video/popular.png" alt="" />
-              <img class="hover" src="img/video/popular-hover.png" alt="" />
-            </div>
-            <h3 datacolor="#60cce4" style="color: #60cce4">Popular</h3>
-          </a>
+          </div>
         </div>
       </div>
     </div>

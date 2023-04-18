@@ -18,12 +18,12 @@ $(function () {
   $(".header .btn-search").click(function () {
     $(".popup-search").addClass("active")
   })
-  $(".popup-search i").click(function () {
+  $(".popup-search .overlay i").click(function () {
     $(".popup-search").removeClass("active")
   })
-  $(".popup-search i").click(function () {
-    $(".popup-search").removeClass("active")
-  })
+  // $(".popup-search .overlay i").click(function () {
+  //   $(".popup-search").removeClass("active")
+  // })
 })
 let header = document.querySelector(".header")
 let topheader = document.querySelector(".topheader")

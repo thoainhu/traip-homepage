@@ -1,6 +1,6 @@
 $(function () {
   $(document).ready(function () {
-    $(".favorite .list .choosing").hover(
+    $(".favorite .list .choosing .choosing-title ").hover(
       function () {
         $color = $(this).find("h3").attr("datacolor")
         $(this).css("background-color", $color)

@@ -38,6 +38,8 @@
     top: 0px;
   }
 }
+@media (max-width: 1183px) {
+}
 @media (max-width: 991px) {
   .topheader {
     display: none;
