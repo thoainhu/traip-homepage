@@ -310,9 +310,6 @@ img {
 .popup-search .form .search-bar .mainbtn {
   width: 40%;
 }
-.popup-search .form .mainbtn button {
-}
-
 @keyframes hoveron {
   from {
     transform: translateX(-50%) translateY(0%);
