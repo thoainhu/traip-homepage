@@ -97,6 +97,9 @@ img {
   height: 22px;
   margin-right: 8px;
 }
+.topheader .contactinfo .menuLanguage .dropdown-menu {
+  z-index: 1000000;
+}
 .header {
   z-index: -1;
   padding: 20px 0;
@@ -458,19 +461,22 @@ img {
   position: absolute;
   top: 100%;
   width: 90%;
+  max-height: 0;
   left: 50%;
   padding: 0;
   transform: translateX(-50%);
   background-color: white;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
   overflow: auto;
-  max-height: 320px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 .header .itemMenu-mobile.active {
   top: 100%;
   opacity: 1;
   visibility: visible;
+  max-height: 320px;
 }
 .header .itemMenu-mobile .itemMenu-item .menudown {
   display: flex;

@@ -1,4 +1,11 @@
 $(function () {
+  $(".header .itemOther .iconmenu").click(function () {
+    $(this).closest(".header").find(".itemMenu-mobile").toggleClass("active")
+    $(".sub-menu").slideUp()
+    $(".menudown").removeClass("active")
+    $(".sub-menu-2").slideUp()
+    $(".menudown2").removeClass("active")
+  })
   $(".header .itemMenu-mobile .itemMenu-item .menudown").click(function () {
     $(this).toggleClass("active")
     $(this).closest(".itemMenu-item").siblings().find(".menudown").removeClass("active")
@@ -32,10 +39,12 @@ window.onscroll = function () {
   let value = window.scrollY
   if (value > 10) {
     header.classList.add("fixed")
+    header.classList.add("active")
     topheader.classList.add("fixed")
     fixedtop.classList.add("fixed")
   } else {
     header.classList.remove("fixed")
+    header.classList.remove("active")
     topheader.classList.remove("fixed")
     fixedtop.classList.remove("fixed")
   }

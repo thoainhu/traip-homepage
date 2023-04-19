@@ -1,8 +1,14 @@
 @media (max-width: 1400px) {
 }
+@media (min-width: 1201px) {
+  .header .itemMenu-mobile {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .header {
     padding: 10px 0;
+    background-color: white;
   }
   .header .itemLogo {
     width: 130px;
@@ -30,9 +36,11 @@
   .header .itemMenu {
     display: none;
   }
-
   .header .itemOther {
     margin-left: auto;
+  }
+  .header .itemMenu-mobile {
+    display: block;
   }
   .fixed-top {
     top: 0px;

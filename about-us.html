@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRAIP - Home page</title>
+    <title>About Us</title>
     <!-- font fam -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap"
@@ -30,9 +30,12 @@
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Breadcrumb -->
+    <link rel="stylesheet" href="css/breadcrumb.css" />
     <!-- css local -->
     <link rel="stylesheet" href="css/home.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/about-us.css" />
   </head>
   <body>
     <div class="topheader">
@@ -82,6 +85,7 @@
       <div class="header">
         <div class="container d-flex align-items-center justify-content-between px-3" style="max-width: 1750px">
           <div class="itemLogo">
+            <a href="index.html" class="logo-white"><img src="img/logo-white.png" alt="" /></a>
             <a href="index.html" class="logo"><img src="img/logo-default-color.png" alt="" /></a>
           </div>
           <div class="itemMenu">
@@ -95,9 +99,9 @@
                 </ul>
               </li>
               <li class="itemMenu-item">
-                <a href="">Pages<i class="fa-solid fa-angle-down" style="color: rgb(182, 182, 182)"></i></a>
+                <a href="">Pages<i class="fa-solid fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                  <li class="sub-menu-item"><a href="about-us.html">About Us</a></li>
+                  <li class="sub-menu-item"><a href="#">About Us</a></li>
                   <li class="sub-menu-item"><a href="#">FAQ's</a></li>
                   <li class="sub-menu-item"><a href="#">Get In Touch</a></li>
                   <li class="sub-menu-item">
@@ -142,21 +146,21 @@
                 </ul>
               </li>
               <li class="itemMenu-item">
-                <a href="">Destinations<i class="fa-solid fa-angle-down" style="color: rgb(182, 182, 182)"></i></a>
+                <a href="">Destinations<i class="fa-solid fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li class="sub-menu-item"><a href="#">Destinations</a></li>
                   <li class="sub-menu-item"><a href="#">Single Destination</a></li>
                 </ul>
               </li>
               <li class="itemMenu-item">
-                <a href="">Tours<i class="fa-solid fa-angle-down" style="color: rgb(182, 182, 182)"></i></a>
+                <a href="">Tours<i class="fa-solid fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li class="sub-menu-item"><a href="#">Tours</a></li>
                   <li class="sub-menu-item"><a href="#">Single Tour</a></li>
                 </ul>
               </li>
               <li class="itemMenu-item">
-                <a href="">Blogs<i class="fa-solid fa-angle-down" style="color: rgb(182, 182, 182)"></i></a>
+                <a href="">Blogs<i class="fa-solid fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li class="sub-menu-item"><a href="#">Blogs Two Column</a></li>
                   <li class="sub-menu-item"><a href="#">Blogs Full</a></li>
@@ -433,117 +437,52 @@
         </div>
       </div>
     </div>
-    <div class="banner">
-      <div class="video">
-        <video src="img/header-video.m4v" muted autoplay loop></video>
+    <div class="banner-page">
+      <div class="title">
+        <h1>About Us</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">About Us</a></li>
+          </ol>
+        </nav>
       </div>
-      <div class="content">
-        <div class="title">
-          <h1>
-            Explore Your Summer Holiday <br />
-            With Us & Enjoy
-          </h1>
-        </div>
-        <div class="mainbtn">
-          <button class="btn">See All Tours<i class="fa-solid fa-arrow-right-long"></i></button>
-        </div>
-        <div class="tablebooking">
-          <form class="selectbooking">
-            <div class="item">
-              <div class="title">
-                <label class="place"><i class="fa-solid fa-location-dot"></i>Where To?</label>
-                <input class="chooseplace" type="text" placeholder="Where Are You Going" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="title">
-                <label class="place"><i class="fa-regular fa-calendar-check"></i>When?</label>
-                <input class="chooseplace" type="text" placeholder="Select Your Time" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="title">
-                <label class="place"><i class="fa-solid fa-plane"></i>Travel Type</label>
-                <input class="chooseplace" type="text" placeholder="Select Your Travel Type" />
-              </div>
-            </div>
-            <div class="item d-flex align-items-center">
-              <div class="last">
-                <label class="place"><i data-feather="users"></i>Guest</label>
-                <input class="chooseplace" type="text" placeholder="Select Number Of Guest" />
-              </div>
-              <div class="mainbtn">
-                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+      <div class="banner-shape"></div>
     </div>
-    <div class="typebooking">
-      <div class="image">
-        <img src="img/partner/partner-1.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-1.png" alt="" class="itemhover" />
+    <div class="session-about">
+      <div class="main-title">
+        <h4 class="title-session">Who We Are</h4>
+        <h1 class="title-content">Know More About Ourselves</h1>
       </div>
-      <div class="image">
-        <img src="img/partner/partner-2.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-2.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-3.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-3.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-4.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-4.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-5.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-5.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-6.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-6.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-7.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-7.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-8.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-8.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-1.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-1.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-2.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-2.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-3.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-3.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-4.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-4.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-5.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-5.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-6.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-6.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-7.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-7.png" alt="" class="itemhover" />
-      </div>
-      <div class="image">
-        <img src="img/partner/partner-8.png" alt="" class="itemmain" />
-        <img src="img/partner/partner-hover-8.png" alt="" class="itemhover" />
+      <div class="session-about-content">
+        <div class="container" style="min-width: 1410px">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="session-about-text">
+                <h4>We Are Your Travel Mate</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp or invidunt ut labore et dolore magna aliquyam
+                  erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </p>
+                <ul>
+                  <li><i class="fa-solid fa-arrow-right-long"></i>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</li>
+                  <li><i class="fa-solid fa-arrow-right-long"></i>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+                  <li><i class="fa-solid fa-arrow-right-long"></i>Diam nonumy eirmod tempor invidunt ut labore et dolore magna</li>
+                  <li><i class="fa-solid fa-arrow-right-long"></i>Labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp or invidunt ut labore et dolore magna. aliquyam
+                  erat, sed diam voluptua.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-img">
+                <img src="img/aboutus-page/ss-about/about-us-image.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="session-top-place">
@@ -552,7 +491,7 @@
         <h1 class="title-content">Planning Your Holiday</h1>
       </div>
       <div class="top-place">
-        <div class="container" style="max-width: 1400px">
+        <div class="container" style="max-width: 1410px">
           <div class="top-place-plane">
             <div class="picture">
               <div class="card">
@@ -764,9 +703,6 @@
                 </div>
               </div>
             </div>
-            <div class="plane">
-              <img src="img/partner/mini-shape-3.png" alt="" />
-            </div>
           </div>
         </div>
       </div>
@@ -814,85 +750,6 @@
       </div>
       <div class="animation-compass">
         <img src="img/map/compass.png" alt="" />
-      </div>
-    </div>
-    <div class="destination">
-      <div class="main-title">
-        <h4 class="title-session">Choose Your Destination</h4>
-        <h1 class="title-content">Live Where You Want</h1>
-      </div>
-      <div class="destination-place">
-        <div class="container d-flex justify-content-lg-between" style="max-width: 1400px">
-          <div class="card">
-            <div class="image">
-              <img src="img/destination/destination-1.jpg" alt="" />
-            </div>
-            <div class="content">
-              <div class="name d-flex align-items-center">
-                <h3>Ikos Olivia</h3>
-                <h4>$32 <span>/ Night</span></h4>
-              </div>
-              <div class="star">
-                <p>
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                  (100 Reviews)
-                </p>
-              </div>
-              <p class="card-content">Lorem ipsum dolor sit amet, consetetu regal sadipscing elitr, sed diam.</p>
-              <div class="link">
-                <a href="">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="img/destination/destination-2.jpg" alt="" />
-            </div>
-            <div class="content">
-              <div class="name d-flex align-items-center">
-                <h3>Tamassa Resort</h3>
-                <h4>$39 <span>/ Night</span></h4>
-              </div>
-              <div class="star">
-                <p>
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                  (99 Reviews)
-                </p>
-              </div>
-              <p class="card-content">Lorem ipsum dolor sit amet, consetetu regal sadipscing elitr, sed diam.</p>
-              <div class="link">
-                <a href="">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="img/destination/destination-3.jpg" alt="" />
-            </div>
-            <div class="content">
-              <div class="name d-flex align-items-center">
-                <h3>Kurumba Maldives</h3>
-                <h4>$52 <span>/ Night</span></h4>
-              </div>
-              <div class="star">
-                <p>
-                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                  (97 Reviews)
-                </p>
-              </div>
-              <p class="card-content">Lorem ipsum dolor sit amet, consetetu regal sadipscing elitr, sed diam.</p>
-              <div class="link">
-                <a href="">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mainbtn">
-        <button class="btn">Explore Hotels<i class="fa-solid fa-arrow-right-long"></i></button>
       </div>
     </div>
     <div class="favorite">
@@ -986,167 +843,6 @@
                   <h3 datacolor="#60cce4" style="color: #60cce4">Popular</h3>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popular">
-      <div class="main-title">
-        <h4 class="title-session">Popular Package</h4>
-        <h1 class="title-content">Amazing Tours Liked By The Adventurous</h1>
-      </div>
-      <div class="popular-slide">
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-1.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>03 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>Island</h3>
-                <h4>$500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(100 Reviews)</p>
-              </div>
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-2.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>03 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>Best Of Cuba</h3>
-                <h4>$1500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(100 Reviews)</p>
-              </div>
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-3.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>04 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>Dream Bali Tour</h3>
-                <h4>$3500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(98 Reviews)</p>
-              </div>
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-4.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>06 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>City Tour Lisbon</h3>
-                <h4>$2500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(101 Reviews)</p>
-              </div>
-
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-5.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>02 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>Sea Side</h3>
-                <h4>$500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(104 Reviews)</p>
-              </div>
-
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <div class="card-image">
-              <a href="card-image-link">
-                <img src="img/seesionpopular/popular-package-6.jpg" alt="" />
-              </a>
-            </div>
-            <div class="card-text">
-              <label class="place"><i class="fa-regular fa-calendar-check"></i>03 Days</label>
-              <div class="name d-flex align-items-center justify-content-between">
-                <h3>Island</h3>
-                <h4>$500<span>/per</span></h4>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
-            </div>
-            <div class="star d-flex align-items-center justify-content-between">
-              <div class="icon">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-                <p>(32 Reviews)</p>
-              </div>
-
-              <a href="" class="link-explore">Explore Tour <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
         </div>
@@ -1348,240 +1044,6 @@
         </div>
       </div>
     </div>
-    <div class="gallery-title">
-      <div class="main-title">
-        <h4 class="title-session">Popular Package</h4>
-        <h1 class="title-content">Amazing Tours Liked By The Adventurous</h1>
-      </div>
-      <div class="gallery">
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-1.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <video class="gal-video" src="img/gallery/photo-gallary-5.mp4" loop autoplay muted></video> </a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-4.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-2.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-3.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-1.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-5.jpg" alt="" /></a>
-          </div>
-        </div>
-        <div class="image">
-          <div class="image-item">
-            <a href="https://www.instagram.com/"> <img src="img/gallery/photo-gallary-6.jpg" alt="" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="blog">
-      <div class="main-title">
-        <h4 class="title-session">To Get More Tips And Tricks</h4>
-        <h1 class="title-content">Read Our Daily Blog</h1>
-      </div>
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 pb-4">
-              <div class="blog-image">
-                <img src="img/blog/blog-card-image-1.jpg" alt="" />
-                <div class="blog-image-content">
-                  <div class="time">
-                    <label class="place"><i class="fa-regular fa-calendar-check"></i>2 Feb</label>
-                    <label class="place"><i class="fa-regular fa-user"></i>Jonh Anderson</label>
-                  </div>
-                  <div class="card-text">
-                    <h3>How Not To Get Lost In Foreign Country</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                      aliquyam erat.
-                    </p>
-                  </div>
-                  <div class="link">
-                    <a href="">Read Article <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="blog-more">
-                <div class="blog-image-content">
-                  <div class="time">
-                    <label class="place"><i class="fa-regular fa-calendar-check"></i>3 Feb</label>
-                    <label class="place"><i class="fa-regular fa-user"></i>Jonh Anderson</label>
-                  </div>
-                  <div class="card-text">
-                    <h3>How Not To Get Lost In Foreign Country</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                      aliquyam erat.
-                    </p>
-                  </div>
-                  <div class="link">
-                    <a href="">Read Article <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-more">
-                <div class="blog-image-content">
-                  <div class="time">
-                    <label class="place"><i class="fa-regular fa-calendar-check"></i>2 Feb</label>
-                    <label class="place"><i class="fa-regular fa-user"></i>Jonh Anderson</label>
-                  </div>
-                  <div class="card-text">
-                    <h3>How To Spend A Perfect Weekend In Asia Together</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                      aliquyam erat.
-                    </p>
-                  </div>
-                  <div class="link">
-                    <a href="">Read Article <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-more">
-                <div class="blog-image-content">
-                  <div class="time">
-                    <label class="place"><i class="fa-regular fa-calendar-check"></i>1 Feb</label>
-                    <label class="place"><i class="fa-regular fa-user"></i>Jonh Anderson</label>
-                  </div>
-                  <div class="card-text">
-                    <h3>The Best Places To Visit With Family</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                      aliquyam erat.
-                    </p>
-                  </div>
-                  <div class="link">
-                    <a href="">Read Article <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shape">
-          <img src="img/blog/mini-shape-2.png" alt="" />
-        </div>
-      </div>
-      <div class="mainbtn">
-        <button class="btn">Explore Blog<i class="fa-solid fa-arrow-right-long"></i></button>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-link">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="item">
-                <a href="index.html" class="link-logo"><img src="img/logo-black.png" alt="logo" /></a>
-                <ul class="item-info">
-                  <li><i class="fa-regular fa-envelope"></i><a href="">hello@traip.com</a></li>
-                  <li><i class="fa-solid fa-phone"></i><a href="">+44 5346 338</a></li>
-                  <li><i class="fa-solid fa-map-location-dot"></i>3 Edgar Buildings, England, BA1 2FJ.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="item">
-                <h4 class="link-title">Quick Links</h4>
-                <ul class="item-info">
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Popular Tour</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Blog</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Shop</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">FAQ's</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="item">
-                <h4 class="link-title">Important Links</h4>
-                <ul class="item-info">
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Destination</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Get In Touch</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Who Are We</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Contact Us</a></li>
-                  <li><i class="fa-solid fa-arrow-right-long"></i><a href="">Hotel</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="item">
-                <h4 class="link-title">Important Links</h4>
-                <ul class="item-gallery">
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-1.jpg" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-2.jpg" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-3.jpg" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-4.jpg" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-5.jpg" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="img/footer/instafeed-6.jpg" alt="" /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-follow">
-        <div class="container d-flex justify-content-between align-items-center">
-          <div class="info">
-            <h4>Copyright ©2021 Traip. Designed & Developed By <a href="https://envytheme.com/">EnvyTheme</a></h4>
-          </div>
-          <div class="social d-flex">
-            <p>Follow:</p>
-            <ul>
-              <li>
-                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- feather icon -->
@@ -1595,5 +1057,6 @@
     <!-- bootstrap local -->
     <script src="js/style.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/about-us.js"></script>
   </body>
 </html>

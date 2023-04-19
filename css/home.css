@@ -152,9 +152,9 @@
 }
 .session-top-place {
   background-image: url(../img/partner/map-1.png);
-  height: 75vh;
   background-repeat: no-repeat;
   text-align: center;
+  padding-bottom: 144px;
 }
 .session-top-place .title {
   margin: 20px auto;

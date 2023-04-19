@@ -1,0 +1,18 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  font-size: 16px;
+}
+
+.breadcrumb {
+  justify-content: center;
+  --bs-breadcrumb-divider-color: white;
+}
+.breadcrumb li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.breadcrumb li a:hover {
+  color: var(--primary-color);
+}
