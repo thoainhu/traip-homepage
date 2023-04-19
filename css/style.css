@@ -573,3 +573,31 @@ img {
   font-weight: 800;
   font-size: 40px;
 }
+
+.back-top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--primary-color);
+  position: fixed;
+  z-index: 10000000;
+  bottom: 90%;
+  right: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 40px -7px;
+  transition: 0.8s;
+  opacity: 0;
+  visibility: hidden;
+}
+.back-top i {
+  font-size: 10px;
+}
+.back-top.active {
+  bottom: 5%;
+  transition: 0.8s;
+  opacity: 1;
+  visibility: visible;
+}

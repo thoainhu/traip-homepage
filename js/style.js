@@ -32,6 +32,8 @@ $(function () {
 let header = document.querySelector(".header")
 let topheader = document.querySelector(".topheader")
 let fixedtop = document.querySelector(".fixed-top")
+let backtop = document.querySelector(".back-top")
+
 window.onscroll = function () {
   let value = window.scrollY
   if (value > 10) {
@@ -39,10 +41,15 @@ window.onscroll = function () {
     header.classList.add("active")
     topheader.classList.add("fixed")
     fixedtop.classList.add("fixed")
+    backtop.classList.add("active")
   } else {
     header.classList.remove("fixed")
     header.classList.remove("active")
     topheader.classList.remove("fixed")
     fixedtop.classList.remove("fixed")
+    backtop.classList.remove("active")
   }
+}
+backtop.onclick = function () {
+  window.scroll(0, 0)
 }

@@ -139,3 +139,61 @@
 .people-guide {
   margin-top: 100px;
 }
+.session-typebooking {
+  padding: 20px;
+  background-image: url(../img/aboutus-page/ss-about/line-grid-shape.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70%;
+  margin-top: 10px;
+}
+.session-typebooking .session-typebooking-content {
+  width: 40%;
+  padding-left: 220px;
+  padding-right: 120px;
+  background-image: url(../img/aboutus-page/ss-about/map-1.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.session-typebooking .session-typebooking-content p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.list-typebooking {
+  width: 60%;
+  padding-right: 220px;
+  padding-left: 20px;
+}
+.list-typebooking .image {
+  border: none;
+  padding: 0;
+}
+.list-typebooking .image .image-inside {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.list-typebooking .image .image-inside .itemhover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.list-typebooking .image .image-inside:hover .itemhover {
+  opacity: 1;
+  transform: scale(1);
+}
+.list-typebooking .image .image-inside .itemmain {
+  transform: scale(1);
+  transition: 0.5s;
+}
+.list-typebooking .image .image-inside:hover .itemmain {
+  transform: scale(0.9);
+}
