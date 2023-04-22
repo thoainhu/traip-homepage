@@ -187,6 +187,12 @@ img {
 .header .itemOther .user {
   display: none;
 }
+.header .itemOther .user a {
+  transition: 0.5s;
+}
+.header .itemOther .user a:hover {
+  color: var(--primary-color);
+}
 .header .itemOther .iconmenu {
   display: none;
   margin-left: 10px;

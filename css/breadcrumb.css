@@ -1,18 +1,27 @@
-.breadcrumb-item + .breadcrumb-item::before {
-  content: ">";
-  font-size: 16px;
-}
-
-.breadcrumb {
+.bcrumb ul.breadcrumb {
+  padding: 5px 0;
+  list-style: none;
+  margin: auto;
   justify-content: center;
-  --bs-breadcrumb-divider-color: white;
 }
-.breadcrumb li a {
-  color: white;
+.bcrumb ul.breadcrumb li {
+  display: inline;
   font-size: 16px;
-  font-weight: 300;
+  color: white;
   cursor: pointer;
 }
-.breadcrumb li a:hover {
+.bcrumb ul.breadcrumb li + li:before {
+  padding: 8px;
+  content: ">";
+  color: white;
+  cursor: pointer;
+}
+.bcrumb ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bcrumb ul.breadcrumb li a:hover {
   color: var(--primary-color);
+  text-decoration: underline;
 }

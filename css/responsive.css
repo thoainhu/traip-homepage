@@ -44,12 +44,15 @@
   .fixed-top {
     top: 0px;
   }
+  .topheader {
+    display: none;
+  }
 }
 @media (max-width: 1183px) {
 }
 @media (max-width: 991px) {
-  .topheader {
-    display: none;
+  .header .itemOther .iconmenu {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {

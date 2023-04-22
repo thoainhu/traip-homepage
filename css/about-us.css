@@ -12,10 +12,10 @@
 .header .itemMenu .itemMenu-list .itemMenu-item > a i {
   color: white;
 }
-.header .btn-search {
-  color: white;
-}
-.header .cart a {
+.header .btn-search,
+.header .cart a,
+.header .user a,
+.header .iconmenu {
   color: white;
 }
 .header .itemLogo .logo {
@@ -33,12 +33,17 @@
 .header.active .itemMenu .itemMenu-list .itemMenu-item > a i {
   color: rgb(155, 155, 155);
 }
-.header.active .btn-search {
+.header.active .btn-search,
+.header.active .cart a,
+.header.active .user a,
+.header.active .iconmenu {
   color: black;
 }
-.header.active .cart a {
-  color: black;
+.header.active .btn-search:hover,
+.header.active .cart a:hover {
+  color: var(--primary-color);
 }
+
 .banner-page {
   background-image: url(../img/aboutus-page/inner-page-header-1.jpg);
   background-size: cover;
@@ -83,12 +88,10 @@
   font-family: "Oswald", sans-serif;
   font-weight: 600;
 }
-.banner-page .title .breadcrumb {
+.banner-page .title .bcrumb {
   margin-top: 40px;
 }
-.banner-page .title .breadcrumb li {
-  color: white;
-}
+
 .session-about {
   background-image: url(../img/aboutus-page/ss-about/map-1.png);
   background-repeat: no-repeat;
