@@ -1,5 +1,11 @@
 @media (max-width: 1400px) {
 }
+
+@media (max-width: 1350px) {
+  .banner .title h1 {
+    font-size: 62px;
+  }
+}
 @media (min-width: 1201px) {
   .header .itemMenu-mobile {
     display: none;
@@ -46,6 +52,9 @@
   }
   .topheader {
     display: none;
+  }
+  .banner .title h1 {
+    font-size: 51px;
   }
 }
 @media (max-width: 1183px) {

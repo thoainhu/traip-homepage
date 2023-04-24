@@ -34,6 +34,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
 .topheader {
   background-image: url(../img/topbar-bg.png);
   background-repeat: no-repeat;
@@ -606,4 +607,74 @@ img {
   transition: 0.8s;
   opacity: 1;
   visibility: visible;
+}
+@media (max-width: 1400px) {
+}
+
+@media (min-width: 1201px) {
+  .header .itemMenu-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header .itemLogo {
+    width: 130px;
+  }
+  .header .itemOther .user {
+    display: block;
+  }
+  .header .itemOther .iconmenu {
+    display: block;
+    margin-left: 30px;
+  }
+  .header .itemOther .mainbtn {
+    display: none;
+  }
+  .header .itemOther svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header .cart {
+    margin-left: 15px;
+  }
+  .header .user {
+    margin-left: 15px;
+  }
+  .header .itemMenu {
+    display: none;
+  }
+  .header .itemOther {
+    margin-left: auto;
+  }
+  .header .itemMenu-mobile {
+    display: block;
+  }
+  .fixed-top {
+    top: 0px;
+  }
+  .topheader {
+    display: none;
+  }
+}
+@media (max-width: 1183px) {
+}
+@media (max-width: 991px) {
+  .header .itemOther .iconmenu {
+    margin-left: 0;
+  }
+  .main-title .title-content {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .main-title .title-content {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 444px) {
 }
