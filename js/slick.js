@@ -72,6 +72,7 @@ $(function () {
         breakpoint: 1200,
         settings: {
           centerMode: false,
+          focusOnSelect: false,
         },
       },
       {
@@ -79,6 +80,7 @@ $(function () {
         settings: {
           slidesToShow: 2,
           centerMode: false,
+          focusOnSelect: false,
         },
       },
       {
@@ -87,6 +89,7 @@ $(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
+          focusOnSelect: false,
         },
       },
     ],

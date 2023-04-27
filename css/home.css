@@ -555,7 +555,9 @@
   text-align: center;
 }
 .favorite .list .choosing .choosing-title {
-  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   padding: 20px 40px;
@@ -1117,26 +1119,26 @@
 .footer .footer-follow {
   background-color: black;
   margin-top: 50px;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .footer .footer-follow .info {
   align-items: center;
 }
 .footer .footer-follow .info h4 {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Oswald", sans-serif;
   margin: 0;
 }
 .footer .footer-follow .info a {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer .footer-follow p {
   display: inline-block;
   margin: auto;
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
 }
@@ -1145,7 +1147,7 @@
 }
 .footer .footer-follow ul li a i {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 20px;
 }
 .footer .footer-follow .social {
@@ -1159,6 +1161,9 @@
   }
   .destination .card:hover .content {
     top: 48%;
+  }
+  .destination .card .content {
+    top: 75%;
   }
 }
 @media (max-width: 1350px) {
@@ -1184,6 +1189,25 @@
   }
   .map .left {
     width: 100%;
+  }
+  .favorite .list {
+    top: 55%;
+  }
+  .favorite .list .choosing .choosing-title {
+    padding: 10px 50px;
+  }
+
+  .favorite .list {
+    width: 80%;
+  }
+  .favorite .list .choosing h3 {
+    font-size: 18px;
+  }
+  .favorite {
+    padding-bottom: 150px;
+  }
+  .destination .card .content {
+    top: 71%;
   }
 }
 @media (max-width: 991px) {
@@ -1218,51 +1242,8 @@
   .favorite {
     margin-top: 50px;
   }
-}
-@media (max-width: 767px) {
-  .banner .title .content-title-h1 {
-    font-size: 30px;
-  }
-  .banner .video {
-    height: 50vh;
-  }
-}
-@media (max-width: 545px) {
-  .typebooking {
-    margin: 30px 0;
-  }
-}
-@media (max-width: 1399px) {
-  .destination .card .content {
-    top: 75%;
-  }
-}
-@media (max-width: 1199px) {
   .favorite .list {
-    top: 55%;
-  }
-  .favorite .list .choosing .choosing-title {
-    padding: 10px 50px;
-  }
-  .favorite .list .choosing {
-    margin-top: 10px;
-  }
-  .favorite .list {
-    width: 80%;
-  }
-  .favorite .list .choosing h3 {
-    font-size: 18px;
-  }
-  .favorite {
-    padding-bottom: 150px;
-  }
-  .destination .card .content {
-    top: 71%;
-  }
-}
-@media (max-width: 991px) {
-  .favorite .list {
-    top: 60%;
+    top: 70%;
   }
   .favorite .list .choosing .choosing-title {
     padding: 10px 40px;
@@ -1282,6 +1263,7 @@
     text-align: center;
     padding-bottom: 30px;
     padding-top: 0px;
+    padding-left: 0px;
   }
   .favorite .content .text {
     margin: 50px auto;
@@ -1294,6 +1276,12 @@
   }
 }
 @media (max-width: 767px) {
+  .banner .title .content-title-h1 {
+    font-size: 30px;
+  }
+  .banner .video {
+    height: 50vh;
+  }
   .destination .card .name h3 {
     font-size: 17px;
   }
@@ -1304,9 +1292,32 @@
     top: auto;
     bottom: 0;
   }
+  .favorite .list .choosing .choosing-title {
+    padding: 10px 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .favorite .list .choosing h3 {
+    font-size: 12px;
+  }
 }
 @media (max-width: 721px) {
   .favorite .list {
     width: 98%;
+  }
+}
+@media (max-width: 545px) {
+  .typebooking {
+    margin: 30px 0;
+  }
+  .favorite .list .choosing .choosing-title {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 333px) {
+  .favorite .list .choosing h3 {
+    font-size: 10px;
+    margin: 0;
   }
 }
