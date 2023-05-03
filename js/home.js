@@ -17,5 +17,4 @@ $(function () {
     $(this).parent().find(".selectize").toggleClass("active");
     $(this).parent().siblings().find(".selectize").removeClass("active");
   });
-  $(".selectbooking .item .selectize .selectize-dropdown-content .option").click(function () {});
 });
