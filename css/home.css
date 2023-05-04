@@ -98,8 +98,23 @@
 .selectbooking .place svg {
   margin-right: 10px;
 }
-.selectbooking .chooseplace {
+.selectbooking .item .chooseplace {
   border: none;
+}
+.selectbooking .item input.active {
+  display: none;
+}
+.selectbooking .item .writePlace {
+  margin-top: 2px;
+  display: none;
+}
+.selectbooking .item .writePlace.active {
+  display: block;
+}
+.selectbooking .item .writePlace p {
+  font-size: 14px;
+  margin: 0;
+  color: black;
 }
 .selectbooking .mainbtn {
   margin-left: 20px;
@@ -812,6 +827,8 @@ a.ui-button:active,
 .people-guide .list-guide .card .card-image .social {
   position: absolute;
   bottom: 10px;
+  width: 70%;
+  text-align: center;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -822,6 +839,7 @@ a.ui-button:active,
   margin: 0;
   transition: 0.5s;
   padding-right: 10px;
+  padding-left: 10px;
 }
 .people-guide .list-guide .card .card-image .social a:hover {
   color: var(--primary-color);
@@ -1255,6 +1273,12 @@ a.ui-button:active,
   .destination .card .content {
     top: 75%;
   }
+  .people-guide .list-guide .card .card-name h3 {
+    font-size: 20px;
+  }
+  .people-guide .list-guide .card .card-name p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1350px) {
   .banner .title .content-title-h1 {
@@ -1301,6 +1325,11 @@ a.ui-button:active,
   }
   .destination .card .content {
     top: 71%;
+  }
+  .people-guide .list-guide .card .card-image .social a {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 18px;
   }
 }
 @media (max-width: 991px) {
@@ -1367,6 +1396,14 @@ a.ui-button:active,
   .destination .card {
     margin-top: 20px;
   }
+  .people-guide .list-guide .card .card-image .social a {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+  }
+  .people-guide .list-guide .card {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 767px) {
   .banner .title .content-title-h1 {
@@ -1394,10 +1431,22 @@ a.ui-button:active,
   .favorite .list .choosing h3 {
     font-size: 12px;
   }
+  .people-guide .list-guide .card .card-image .social a {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 18px;
+  }
 }
 @media (max-width: 721px) {
   .favorite .list {
     width: 98%;
+  }
+}
+@media (max-width: 575px) {
+  .people-guide .list-guide .card .card-image .social a {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 22px;
   }
 }
 @media (max-width: 545px) {

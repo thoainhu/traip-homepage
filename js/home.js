@@ -17,4 +17,11 @@ $(function () {
     $(this).parent().find(".selectize").toggleClass("active");
     $(this).parent().siblings().find(".selectize").removeClass("active");
   });
+  $(".tablebooking  .selectbooking .selectize .option").click(function () {
+    $chooseWhere = $(this).text();
+    $where = $(this).closest(".item").find(".title .writePlace p").text($chooseWhere);
+    $(this).closest(".selectize").removeClass("active");
+    $(this).closest(".item").find("input").addClass("active");
+    $(this).closest(".item").find(".title .writePlace").addClass("active");
+  });
 });
