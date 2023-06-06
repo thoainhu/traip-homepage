@@ -18,18 +18,16 @@ $(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
         },
       },
     ],
-  })
+  });
   $(".picture").slick({
     slidesToShow: 4,
     slidesToScroll: 2,
@@ -53,48 +51,37 @@ $(function () {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
-  })
+  });
   $(".popular-slide").slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    dots: false,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1339,
         settings: {
-          centerMode: false,
-          focusOnSelect: false,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          centerMode: false,
-          focusOnSelect: false,
         },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          focusOnSelect: false,
         },
       },
     ],
-  })
-
+  });
   $(".feedback-list").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -102,7 +89,21 @@ $(function () {
     autoplaySpeed: 2000,
     dots: false,
     arrows: false,
-  })
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
   $(".gallery").slick({
     infinite: true,
     speed: 2000,
@@ -110,5 +111,25 @@ $(function () {
     slidesToScroll: 4,
     autoplay: true,
     centerMode: true,
-  })
-})
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

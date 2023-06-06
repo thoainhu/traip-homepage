@@ -129,6 +129,22 @@ img {
 .header .itemLogo {
   width: 140px;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.logo img {
+  margin-right: 20px;
+  width: 45px;
+  height: 55px;
+}
+.logo:hover {
+  color: var(--primary-color);
+}
 .header .itemOther {
   display: flex;
   align-items: center;
@@ -273,7 +289,7 @@ img {
 .popup-search .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.757);
+  background-color: rgb(0 0 0 / 81%);
   position: absolute;
   top: 0;
   left: 0;
@@ -286,7 +302,7 @@ img {
   border-radius: 10px;
   overflow: hidden;
   /* padding: 10px; */
-  width: 20%;
+  width: 30%;
 }
 .popup-search.active {
   opacity: 1;
@@ -295,9 +311,9 @@ img {
 .popup-search .overlay i {
   position: absolute;
   color: #ffff;
-  top: 28px;
-  left: 97%;
-  font-size: 30px;
+  top: 69px;
+  right: 80px;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -305,8 +321,22 @@ img {
   width: 35%;
   margin: 20px auto;
 }
+.popup-search .form .logo-white .logo-search {
+  display: flex;
+  align-items: center;
+}
+.popup-search .form .logo-white .logo-search .logo {
+  color: white;
+}
+.popup-search .form .logo-white .logo-search img {
+  width: 45px;
+  height: 55px;
+  margin-right: 15px;
+}
 .popup-search .search-bar {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px 2px;
 }
 .popup-search .form .search-bar input {
@@ -608,14 +638,18 @@ img {
   opacity: 1;
   visibility: visible;
 }
-@media (max-width: 1400px) {
-}
 
+@media (max-width: 1234px) {
+  .popup-search .form {
+    width: 40%;
+  }
+}
 @media (min-width: 1201px) {
   .header .itemMenu-mobile {
     display: none;
   }
 }
+
 @media (max-width: 1200px) {
   .header {
     padding: 10px 0;
@@ -661,6 +695,11 @@ img {
 }
 @media (max-width: 1183px) {
 }
+@media (max-width: 925px) {
+  .popup-search .form {
+    width: 50%;
+  }
+}
 @media (max-width: 991px) {
   .header .itemOther .iconmenu {
     margin-left: 0;
@@ -674,7 +713,36 @@ img {
     font-size: 25px;
   }
 }
+@media (max-width: 732px) {
+  .popup-search .form {
+    width: 60%;
+  }
+}
+@media (max-width: 617px) {
+  .popup-search .form {
+    width: 70%;
+  }
+}
+@media (max-width: 529px) {
+  .popup-search .form {
+    width: 80%;
+  }
+}
 @media (max-width: 576px) {
 }
-@media (max-width: 444px) {
+@media (max-width: 445px) {
+  .popup-search .search-bar {
+    display: block;
+    border-radius: 0;
+  }
+  .popup-search .form .search-bar input {
+    width: 100%;
+    text-align: center;
+  }
+  .popup-search .form .search-bar .mainbtn {
+    width: 100%;
+  }
+  .popup-search .form .search-bar .mainbtn .btn {
+    width: 100%;
+  }
 }

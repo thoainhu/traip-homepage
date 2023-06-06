@@ -75,6 +75,3 @@
 .slick-arrow:hover::before {
   color: #fff;
 }
-.popular-slide .slick-slide {
-  width: 460px !important;
-}

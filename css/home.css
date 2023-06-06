@@ -3,7 +3,7 @@
   text-align: center;
 }
 .banner .video {
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 .banner .video video {
@@ -34,6 +34,9 @@
   font-weight: 700;
   margin: 50px auto;
   color: white;
+}
+.banner .mainbtn .btn {
+  z-index: 0;
 }
 .banner .tablebooking {
   text-align: center;
@@ -893,31 +896,31 @@ a.ui-button:active,
   margin-top: 50px;
 }
 .feedback .feedback-list .feedback-list-item {
-  padding: 10px 20px;
+  height: auto;
+  padding: 10px;
 }
-.feedback .feedback-item {
-  position: relative;
+.feedback .feedback-list .feedback-list-item .item {
+  background-image: url("../img/feedback/testimonial-bg-shape.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-.feedback .feedback-item .feedback-item-quote {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.feedback .feedback-item .feedback-item-quote .feedback-image-client img {
-  width: 40px;
+.feedback .feedback-item-quote .feedback-image-client img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .feedback .feedback-item-quote {
-  padding: 40px;
+  padding: 20px;
 }
 .feedback .feedback-item-quote h4 {
   color: black;
   font-size: 18px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 .feedback .feedback-item-quote i {
   font-size: 30px;
@@ -933,7 +936,10 @@ a.ui-button:active,
   font-weight: 500;
   font-style: italic;
   color: black;
-  margin-top: 10px;
+  margin-top: 5px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallery-title {
   text-align: center;
@@ -987,8 +993,8 @@ a.ui-button:active,
 }
 .blog .content .shape {
   position: absolute;
-  top: -100px;
-  right: 98px;
+  top: -10%;
+  right: 5%;
   z-index: 1;
 }
 .blog .content .shape img {
@@ -1161,14 +1167,17 @@ a.ui-button:active,
 }
 .footer {
   background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
   padding-top: 550px;
   margin-top: 80px;
+  height: auto;
 }
-.footer .item .link-logo img {
-  width: 50%;
+.footer .item .logo {
+  color: black;
 }
-.footer .item .link-logo {
-  padding-right: 50px;
+.footer .item .logo img {
+  margin-right: 10px;
 }
 .footer .item .item-info {
   margin-top: 30px;
@@ -1238,9 +1247,8 @@ a.ui-button:active,
   font-family: "Oswald", sans-serif;
   margin: 0;
 }
-.footer .footer-follow .info a {
+.footer .footer-follow .info span {
   color: var(--primary-color);
-  font-size: 16px;
 }
 .footer .footer-follow p {
   display: inline-block;
@@ -1331,6 +1339,9 @@ a.ui-button:active,
     padding-left: 5px;
     font-size: 18px;
   }
+  .blog .content .shape img {
+    width: 55%;
+  }
 }
 @media (max-width: 991px) {
   .banner .video {
@@ -1404,8 +1415,35 @@ a.ui-button:active,
   .people-guide .list-guide .card {
     margin-top: 20px;
   }
+  .popular-slide .card .card-text .name h3 {
+    font-size: 20px;
+  }
+  .blog .content .shape {
+    display: none;
+  }
+  .popular-slide .card .card-text .name h4 {
+    font-size: 18px;
+  }
+  .popular-slide .card .card-text .place {
+    font-size: 14px;
+  }
+  .popular-slide .card .star .link-explore {
+    font-size: 16px;
+  }
+  .popular-slide .card .star .link-explore {
+    font-size: 16px;
+  }
+  .popular-slide .card .card-text p {
+    font-size: 16px;
+  }
+  .footer {
+    padding-top: 300px;
+  }
+  .footer .item {
+    margin-top: 30px;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .banner .title .content-title-h1 {
     font-size: 30px;
   }
@@ -1436,6 +1474,9 @@ a.ui-button:active,
     padding-left: 5px;
     font-size: 18px;
   }
+  .footer {
+    padding-top: 10px;
+  }
 }
 @media (max-width: 721px) {
   .favorite .list {
@@ -1447,6 +1488,9 @@ a.ui-button:active,
     padding-right: 10px;
     padding-left: 10px;
     font-size: 22px;
+  }
+  .footer .item {
+    margin-left: 20px;
   }
 }
 @media (max-width: 545px) {
